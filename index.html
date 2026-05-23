@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Municipal Policy Dashboard</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
@@ -13,16 +17,25 @@
 
     <div class="dashboard-container">
 
+        <!-- TOP SECTION -->
         <header class="topbar">
-            <h1>Municipal Policy Dashboard</h1>
 
-            <div class="tabs">
-                <button class="active">Mobility</button>
-                <button>Nature</button>
-                <button>Culture & Community</button>
+            <div>
+                <h1>Municipal Policy Dashboard</h1>
+                <p class="subtitle">
+                    KU Leuven Data Science Project
+                </p>
             </div>
+
+            <nav class="tabs">
+                <button>Mobility</button>
+                <button>Nature</button>
+                <button class="active">Culture & Community</button>
+            </nav>
+
         </header>
 
+        <!-- KPI CARDS -->
         <section class="stats-row">
 
             <div class="stat-card">
@@ -47,38 +60,81 @@
 
         </section>
 
+        <!-- MAIN GRID -->
         <main class="main-grid">
 
+            <!-- LEFT LARGE CARD -->
             <section class="large-card">
-                <h3>Policy Expenditure vs Citizen Satisfaction</h3>
 
-                <img src="assets/images/dashboard-preview.jpg"
+                <h3>
+                    Expenditures in culture explain satisfaction
+                    with cultural facilities
+                </h3>
+
+                <img src="assets/images/dashboard-preview.jpeg"
                      alt="Dashboard Preview">
+
             </section>
 
+            <!-- RIGHT PANEL -->
             <section class="side-panel">
 
-                <h3>Most Active Municipalities</h3>
+                <h3>
+                    Which municipalities have the most active civic life?
+                </h3>
+
+                <div class="ranking-list">
+
+                    <div class="ranking-item">
+                        <span>Leuven</span>
+                        <div class="bar positive"></div>
+                    </div>
+
+                    <div class="ranking-item">
+                        <span>Ghent</span>
+                        <div class="bar positive medium"></div>
+                    </div>
+
+                    <div class="ranking-item">
+                        <span>Bruges</span>
+                        <div class="bar positive small"></div>
+                    </div>
+
+                    <div class="ranking-item">
+                        <span>Antwerp</span>
+                        <div class="bar negative"></div>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- PIE CHART -->
+            <section class="small-card">
+
+                <h3>Segments meeting places</h3>
 
                 <canvas id="pieChart"></canvas>
 
             </section>
 
+            <!-- INSIGHTS -->
             <section class="small-card">
-                <h3>Meeting Places</h3>
 
-                <div class="placeholder-chart">
-                    Pie chart placeholder
-                </div>
-            </section>
+                <h3>Policy Insights</h3>
 
-            <section class="small-card">
-                <h3>Insights</h3>
-
-                <p>
-                    Municipalities with higher investment levels
-                    appear to show stronger citizen satisfaction trends.
+                <p class="insight-text">
+                    Municipalities with higher expenditure levels
+                    appear to demonstrate moderately stronger
+                    citizen satisfaction indicators.
                 </p>
+
+                <p class="insight-text">
+                    Social participation metrics also appear to
+                    correlate with investment intensity in
+                    community infrastructure.
+                </p>
+
             </section>
 
         </main>
@@ -88,4 +144,5 @@
     <script src="script.js"></script>
 
 </body>
+
 </html>
