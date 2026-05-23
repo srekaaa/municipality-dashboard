@@ -82,11 +82,49 @@ body {
 
 /* HERO TEXT */
 
-.hero-label {
-    opacity: 0.7;
-    margin-bottom: 20px;
-    font-size: 15px;
+.hero-partners {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
 }
+
+.partner-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+    .partner-item img {
+        height: 34px;
+        width: auto;
+        object-fit: contain;
+    }
+
+    .partner-item span {
+        font-size: 15px;
+        opacity: 0.85;
+    }
+
+.partner-divider {
+    width: 1px;
+    height: 24px;
+    background: rgba(255,255,255,0.2);
+}
+
+.dataset-link {
+    display: inline-block;
+    margin-bottom: 28px;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+    .dataset-link:hover {
+        color: white;
+    }
 
 .hero-text h1 {
     font-size: 72px;
@@ -130,9 +168,7 @@ body {
     box-shadow: 0 20px 60px rgba(0,0,0,0.35);
 }
 
-/* ========================= */
-/* DASHBOARD SECTION */
-/* ========================= */
+/* DASHBOARD */
 
 .dashboard-section {
     padding: 40px 6% 80px;
@@ -201,7 +237,7 @@ body {
     margin-bottom: 25px;
 }
 
-/* LARGE CARD */
+/* CARD TITLES */
 
 .large-card h3,
 .side-panel h3,
@@ -264,15 +300,13 @@ body {
     object-fit: contain;
 }
 
-/* PIE CHART */
+/* PIE */
 
 .small-card canvas {
     max-height: 320px;
 }
 
-/* ========================= */
 /* RESPONSIVE */
-/* ========================= */
 
 @media (max-width: 1200px) {
 
