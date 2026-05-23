@@ -7,38 +7,84 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <header>
-        <h1>Municipal Policy Dashboard</h1>
-        <p>KU Leuven Data Science Project</p>
-    </header>
+    <div class="dashboard-container">
 
-    <nav>
-        <button>Mobility</button>
-        <button>Nature</button>
-        <button>Culture & Community</button>
-    </nav>
+        <header class="topbar">
+            <h1>Municipal Policy Dashboard</h1>
 
-    <main>
+            <div class="tabs">
+                <button class="active">Mobility</button>
+                <button>Nature</button>
+                <button>Culture & Community</button>
+            </div>
+        </header>
 
-        <section class="card">
-            <h2>Research Question</h2>
+        <section class="stats-row">
 
-            <p>
-                Do higher expenditures in a policy domain
-                lead to greater citizen satisfaction?
-            </p>
+            <div class="stat-card">
+                <h2>€166.40</h2>
+                <p>Average (€ / citizen)</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>€143.75</h2>
+                <p>Median (€ / citizen)</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>€1545.09</h2>
+                <p>Highest (€ / citizen)</p>
+            </div>
+
+            <div class="stat-card">
+                <h2>€12.30</h2>
+                <p>Lowest (€ / citizen)</p>
+            </div>
+
         </section>
 
-        <section class="card">
-            <h2>Dashboard Preview</h2>
+        <main class="main-grid">
 
-            <img src="assets/images/dashboard-preview.jpg"
-                 alt="Dashboard preview">
-        </section>
+            <section class="large-card">
+                <h3>Policy Expenditure vs Citizen Satisfaction</h3>
 
-    </main>
+                <img src="assets/images/dashboard-preview.jpg"
+                     alt="Dashboard Preview">
+            </section>
+
+            <section class="side-panel">
+
+                <h3>Most Active Municipalities</h3>
+
+                <div class="placeholder-chart">
+                    Chart placeholder
+                </div>
+
+            </section>
+
+            <section class="small-card">
+                <h3>Meeting Places</h3>
+
+                <div class="placeholder-chart">
+                    Pie chart placeholder
+                </div>
+            </section>
+
+            <section class="small-card">
+                <h3>Insights</h3>
+
+                <p>
+                    Municipalities with higher investment levels
+                    appear to show stronger citizen satisfaction trends.
+                </p>
+            </section>
+
+        </main>
+
+    </div>
 
     <script src="script.js"></script>
 
