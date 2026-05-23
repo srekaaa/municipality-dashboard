@@ -2,68 +2,112 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Municipal Policy Dashboard</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="style.css">
 
-    <!-- Chart.js -->
+    <!-- CHART.JS -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
 
     <div class="dashboard-container">
 
-        <!-- TOP SECTION -->
+        <!-- TOPBAR -->
+
         <header class="topbar">
 
             <div>
-                <h1>Municipal Policy Dashboard</h1>
+
+                <h1>
+                    Municipal Policy Dashboard
+                </h1>
+
                 <p class="subtitle">
                     KU Leuven Data Science Project
                 </p>
+
             </div>
 
             <nav class="tabs">
-                <button>Mobility</button>
-                <button>Nature</button>
-                <button class="active">Culture & Community</button>
+
+                <button>
+                    Mobility
+                </button>
+
+                <button>
+                    Nature
+                </button>
+
+                <button class="active">
+                    Culture & Community
+                </button>
+
             </nav>
 
         </header>
 
         <!-- KPI CARDS -->
+
         <section class="stats-row">
 
             <div class="stat-card">
+
                 <h2>€166.40</h2>
-                <p>Average (€ / citizen)</p>
+
+                <p>
+                    Average (€ / citizen)
+                </p>
+
             </div>
 
             <div class="stat-card">
+
                 <h2>€143.75</h2>
-                <p>Median (€ / citizen)</p>
+
+                <p>
+                    Median (€ / citizen)
+                </p>
+
             </div>
 
             <div class="stat-card">
+
                 <h2>€1545.09</h2>
-                <p>Highest (€ / citizen)</p>
+
+                <p>
+                    Highest (€ / citizen)
+                </p>
+
             </div>
 
             <div class="stat-card">
+
                 <h2>€12.30</h2>
-                <p>Lowest (€ / citizen)</p>
+
+                <p>
+                    Lowest (€ / citizen)
+                </p>
+
             </div>
 
         </section>
 
         <!-- MAIN GRID -->
+
         <main class="main-grid">
 
-            <!-- LEFT LARGE CARD -->
+            <!-- LARGE CARD -->
+
             <section class="large-card">
 
                 <h3>
@@ -71,11 +115,70 @@
                     with cultural facilities
                 </h3>
 
-                <canvas id="scatterChart"></canvas>
+                <!-- TABLEAU EMBED -->
+
+                <div class='tableauPlaceholder'
+                     id='viz1746999999999'>
+
+                    <noscript>
+
+                        <a href='#'>
+
+                            <img alt='Dashboard'
+                                 src='https://public.tableau.com/static/images/fi/firstversion_17772025575120/Dashboard1/1_rss.png'
+                                 style='border: none' />
+
+                        </a>
+
+                    </noscript>
+
+                    <object class='tableauViz'
+                            style='display:none;'>
+
+                        <param name='host_url'
+                               value='https%3A%2F%2Fpublic.tableau.com%2F' />
+
+                        <param name='embed_code_version'
+                               value='3' />
+
+                        <param name='site_root'
+                               value='' />
+
+                        <param name='name'
+                               value='firstversion_17772025575120/Dashboard1' />
+
+                        <param name='tabs'
+                               value='no' />
+
+                        <param name='toolbar'
+                               value='yes' />
+
+                        <param name='animate_transition'
+                               value='yes' />
+
+                        <param name='display_static_image'
+                               value='yes' />
+
+                        <param name='display_spinner'
+                               value='yes' />
+
+                        <param name='display_overlay'
+                               value='yes' />
+
+                        <param name='display_count'
+                               value='yes' />
+
+                        <param name='language'
+                               value='en-US' />
+
+                    </object>
+
+                </div>
 
             </section>
 
-            <!-- RIGHT PANEL -->
+            <!-- SIDE PANEL -->
+
             <section class="side-panel">
 
                 <h3>
@@ -85,23 +188,35 @@
                 <div class="ranking-list">
 
                     <div class="ranking-item">
+
                         <span>Leuven</span>
+
                         <div class="bar positive"></div>
+
                     </div>
 
                     <div class="ranking-item">
+
                         <span>Ghent</span>
+
                         <div class="bar positive medium"></div>
+
                     </div>
 
                     <div class="ranking-item">
+
                         <span>Bruges</span>
+
                         <div class="bar positive small"></div>
+
                     </div>
 
                     <div class="ranking-item">
+
                         <span>Antwerp</span>
+
                         <div class="bar negative"></div>
+
                     </div>
 
                 </div>
@@ -109,29 +224,39 @@
             </section>
 
             <!-- PIE CHART -->
+
             <section class="small-card">
 
-                <h3>Segments meeting places</h3>
+                <h3>
+                    Segments meeting places
+                </h3>
 
                 <canvas id="pieChart"></canvas>
 
             </section>
 
             <!-- INSIGHTS -->
+
             <section class="small-card">
 
-                <h3>Policy Insights</h3>
+                <h3>
+                    Policy Insights
+                </h3>
 
                 <p class="insight-text">
+
                     Municipalities with higher expenditure levels
                     appear to demonstrate moderately stronger
                     citizen satisfaction indicators.
+
                 </p>
 
                 <p class="insight-text">
+
                     Social participation metrics also appear to
                     correlate with investment intensity in
                     community infrastructure.
+
                 </p>
 
             </section>
@@ -139,6 +264,32 @@
         </main>
 
     </div>
+
+    <!-- TABLEAU SCRIPT -->
+
+    <script type='text/javascript'>
+
+        var divElement =
+            document.getElementById('viz1746999999999');
+
+        var vizElement =
+            divElement.getElementsByTagName('object')[0];
+
+        vizElement.style.width = '100%';
+        vizElement.style.height = '620px';
+
+        var scriptElement =
+            document.createElement('script');
+
+        scriptElement.src =
+            'https://public.tableau.com/javascripts/api/viz_v1.js';
+
+        vizElement.parentNode.insertBefore(
+            scriptElement,
+            vizElement
+        );
+
+    </script>
 
     <script src="script.js"></script>
 

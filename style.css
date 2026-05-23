@@ -134,7 +134,7 @@ body {
 /* LARGE CARD */
 
 .large-card {
-    min-height: 650px;
+    min-height: 720px;
 }
 
     .large-card h3,
@@ -146,24 +146,17 @@ body {
         font-weight: 700;
     }
 
-    /* IMAGE */
+/* TABLEAU */
 
-    .large-card img {
-        width: 100%;
-        border-radius: 18px;
-        margin-top: 10px;
-    }
-
-/* CHARTS */
-
-#scatterChart {
-    height: 520px !important;
+.tableauPlaceholder {
+    width: 100%;
+    min-height: 620px;
     margin-top: 20px;
 }
 
-.small-card canvas {
-    max-width: 100%;
-    margin-top: 20px;
+.tableauViz {
+    border-radius: 18px;
+    overflow: hidden;
 }
 
 /* SIDE PANEL */
@@ -214,6 +207,13 @@ body {
 .negative {
     background: #c0392b;
     width: 35%;
+}
+
+/* PIE CHART */
+
+.small-card canvas {
+    max-width: 100%;
+    margin-top: 20px;
 }
 
 /* INSIGHTS */

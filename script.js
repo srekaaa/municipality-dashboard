@@ -1,7 +1,9 @@
+// =========================
 // PIE CHART
+// =========================
 
-const pieCtx = document
-    .getElementById('pieChart');
+const pieCtx =
+    document.getElementById('pieChart');
 
 new Chart(pieCtx, {
 
@@ -26,6 +28,7 @@ new Chart(pieCtx, {
             ],
 
             borderWidth: 0
+
         }]
     },
 
@@ -33,85 +36,66 @@ new Chart(pieCtx, {
 
         responsive: true,
 
+        maintainAspectRatio: false,
+
         plugins: {
 
             legend: {
-                position: 'bottom'
+
+                position: 'bottom',
+
+                labels: {
+
+                    padding: 20,
+
+                    font: {
+                        size: 14
+                    }
+                }
             }
         }
     }
 });
 
 
-// SCATTERPLOT
+// =========================
+// TAB BUTTON INTERACTIONS
+// =========================
 
-const scatterCtx = document
-    .getElementById('scatterChart');
+const tabs =
+    document.querySelectorAll('.tabs button');
 
-new Chart(scatterCtx, {
+tabs.forEach(tab => {
 
-    type: 'scatter',
+    tab.addEventListener('click', () => {
 
-    data: {
+        tabs.forEach(btn => {
+            btn.classList.remove('active');
+        });
 
-        datasets: [{
+        tab.classList.add('active');
 
-            label:
-                'Municipalities',
+    });
 
-            data: [
+});
 
-                { x: 120, y: 62 },
-                { x: 180, y: 71 },
-                { x: 220, y: 79 },
-                { x: 310, y: 86 },
-                { x: 95, y: 58 },
-                { x: 270, y: 83 },
-                { x: 150, y: 69 }
 
-            ],
+// =========================
+// CARD HOVER EFFECT
+// =========================
 
-            backgroundColor:
-                '#7e57c2',
+const cards =
+    document.querySelectorAll(
+        '.stat-card, .large-card, .side-panel, .small-card'
+    );
 
-            pointRadius: 8
-        }]
-    },
+cards.forEach(card => {
 
-    options: {
+    card.addEventListener('mouseenter', () => {
 
-        responsive: true,
+        card.style.transition =
+            'transform 0.2s ease';
 
-        plugins: {
+    });
 
-            legend: {
-                display: false
-            }
-        },
-
-        scales: {
-
-            x: {
-
-                title: {
-
-                    display: true,
-
-                    text:
-                        'Expenditure (€ per citizen)'
-                }
-            },
-
-            y: {
-
-                title: {
-
-                    display: true,
-
-                    text:
-                        'Citizen Satisfaction (%)'
-                }
-            }
-        }
-    }
 });
