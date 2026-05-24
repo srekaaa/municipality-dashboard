@@ -1,4 +1,6 @@
+/* ========================= */
 /* RESET */
+/* ========================= */
 
 * {
     margin: 0;
@@ -6,27 +8,31 @@
     box-sizing: border-box;
 }
 
+/* ========================= */
 /* BODY */
+/* ========================= */
 
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient( 135deg, #d7c3f3, #c8ecd5 );
     color: #222;
     overflow-x: hidden;
-    padding: 16px;
+    padding: 14px;
 }
 
+/* ========================= */
 /* TOPBAR */
+/* ========================= */
 
 .topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .topbar-left h1 {
-    font-size: 36px;
+    font-size: 34px;
     margin-bottom: 4px;
 }
 
@@ -42,7 +48,7 @@ body {
     .topbar-right button {
         border: none;
         background: rgba(255,255,255,0.75);
-        padding: 12px 18px;
+        padding: 11px 16px;
         border-radius: 14px;
         font-weight: 600;
         cursor: pointer;
@@ -52,46 +58,48 @@ body {
         background: white;
     }
 
+/* ========================= */
 /* INTRO */
+/* ========================= */
 
 .intro-section {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .intro-card {
-    background: rgba(255,255,255,0.75);
-    border-radius: 26px;
-    padding: 28px;
+    background: rgba(255,255,255,0.76);
+    border-radius: 24px;
+    padding: 24px;
     display: flex;
     justify-content: space-between;
-    gap: 30px;
+    gap: 24px;
     align-items: flex-start;
 }
 
 .intro-label {
     display: inline-block;
-    margin-bottom: 16px;
-    font-size: 13px;
+    margin-bottom: 12px;
+    font-size: 12px;
     letter-spacing: 1px;
     opacity: 0.6;
 }
 
 .intro-card h2 {
-    font-size: 38px;
+    font-size: 34px;
     line-height: 1.1;
-    margin-bottom: 18px;
+    margin-bottom: 16px;
     max-width: 900px;
 }
 
 .intro-card p {
-    line-height: 1.8;
+    line-height: 1.7;
     max-width: 850px;
     opacity: 0.8;
 }
 
 .dataset-link {
     background: white;
-    padding: 14px 18px;
+    padding: 12px 16px;
     border-radius: 14px;
     text-decoration: none;
     color: #222;
@@ -99,35 +107,37 @@ body {
     font-weight: 600;
 }
 
+/* ========================= */
 /* KPI */
+/* ========================= */
 
 .stats-row {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    margin-bottom: 20px;
+    gap: 14px;
+    margin-bottom: 18px;
 }
 
 .stat-card {
-    background: rgba(255,255,255,0.75);
-    border-radius: 24px;
-    padding: 24px;
+    background: rgba(255,255,255,0.76);
+    border-radius: 22px;
+    padding: 22px;
 }
 
 .stat-icon {
-    width: 52px;
-    height: 52px;
-    border-radius: 16px;
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: linear-gradient( 135deg, #8f6be8, #72c39b );
     color: white;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 .stat-card h3 {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 8px;
 }
 
@@ -135,98 +145,114 @@ body {
     opacity: 0.7;
 }
 
+/* ========================= */
 /* DASHBOARD */
+/* ========================= */
 
 .dashboard-section {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 18px;
 }
 
 .dashboard-card {
-    background: rgba(255,255,255,0.78);
+    background: rgba(255,255,255,0.8);
     border-radius: 28px;
-    padding: 18px;
+    padding: 16px;
     overflow: hidden;
 }
 
 .dashboard-title h2 {
-    font-size: 34px;
-    margin-bottom: 20px;
+    font-size: 30px;
+    margin-bottom: 18px;
     line-height: 1.1;
 }
 
+/* ========================= */
 /* TABLEAU */
+/* ========================= */
 
 .tableauPlaceholder {
-    width: 100% !important;
-    min-height: 950px;
+    width: 100%;
+    height: 980px;
     overflow: hidden;
-    border-radius: 20px;
+    border-radius: 18px;
+    position: relative;
 }
+
+/* SCALE THE ENTIRE DASHBOARD */
 
 .tableauViz {
-    width: 100% !important;
+    transform: scale(0.78);
+    transform-origin: top left;
+    width: 128% !important;
+    height: 1280px !important;
 }
 
+/* ========================= */
 /* INSIGHTS */
+/* ========================= */
 
 .insights-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    margin-bottom: 20px;
+    gap: 14px;
+    margin-bottom: 18px;
 }
 
 .insight-card {
-    background: rgba(255,255,255,0.75);
-    border-radius: 24px;
-    padding: 24px;
+    background: rgba(255,255,255,0.76);
+    border-radius: 22px;
+    padding: 22px;
 }
 
     .insight-card h3 {
-        margin-bottom: 14px;
-        font-size: 22px;
+        margin-bottom: 12px;
+        font-size: 20px;
     }
 
     .insight-card p {
-        line-height: 1.8;
+        line-height: 1.7;
         opacity: 0.8;
     }
 
+/* ========================= */
 /* FOOTER */
+/* ========================= */
 
 .footer {
-    background: rgba(255,255,255,0.75);
-    border-radius: 28px;
-    padding: 26px;
+    background: rgba(255,255,255,0.76);
+    border-radius: 24px;
+    padding: 24px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 24px;
 }
 
 .footer-text h3 {
-    margin-bottom: 12px;
-    font-size: 24px;
+    margin-bottom: 10px;
+    font-size: 22px;
 }
 
 .footer-text p {
-    line-height: 1.8;
+    line-height: 1.7;
     opacity: 0.8;
     max-width: 700px;
 }
 
 .footer-logos {
     display: flex;
-    gap: 22px;
+    gap: 20px;
     align-items: center;
 }
 
     .footer-logos img {
-        height: 52px;
+        height: 48px;
     }
 
+/* ========================= */
 /* RESPONSIVE */
+/* ========================= */
 
 @media (max-width: 1200px) {
 
@@ -237,6 +263,15 @@ body {
 
     .insights-section {
         grid-template-columns: 1fr;
+    }
+
+    .tableauViz {
+        transform: scale(0.62);
+        width: 160% !important;
+    }
+
+    .tableauPlaceholder {
+        height: 760px;
     }
 }
 
@@ -256,7 +291,7 @@ body {
 @media (max-width: 650px) {
 
     body {
-        padding: 12px;
+        padding: 10px;
     }
 
     .stats-row {
@@ -268,14 +303,19 @@ body {
     }
 
     .intro-card h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .dashboard-title h2 {
-        font-size: 26px;
+        font-size: 24px;
+    }
+
+    .tableauViz {
+        transform: scale(0.48);
+        width: 210% !important;
     }
 
     .tableauPlaceholder {
-        min-height: 700px;
+        height: 560px;
     }
 }
