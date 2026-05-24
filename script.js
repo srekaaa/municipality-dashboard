@@ -63,7 +63,7 @@ new Chart(pieCtx, {
 // =========================
 
 const tabs =
-    document.querySelectorAll('.tabs button');
+    document.querySelectorAll('.nav-center button');
 
 tabs.forEach(tab => {
 
