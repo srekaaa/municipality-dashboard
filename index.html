@@ -9,7 +9,7 @@
           content="width=device-width, initial-scale=1.0">
 
     <title>
-        Municipal Cultural Dashboard
+        Municipal Dashboard
     </title>
 
     <!-- CSS -->
@@ -17,21 +17,17 @@
     <link rel="stylesheet"
           href="style.css">
 
-    <!-- ICONS -->
+    <!-- FONT AWESOME -->
 
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-    <!-- CHART JS -->
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
 </head>
 
 <body>
 
     <!-- ========================= -->
-    <!-- TOPBAR -->
+    <!-- TOP BAR -->
     <!-- ========================= -->
 
     <header class="topbar">
@@ -89,9 +85,8 @@
                     This dashboard explores the relationship between municipal
                     cultural expenditure and citizen satisfaction indicators
                     using data from the Vlaamse Gemeente-Stadsmonitor.
-                    The project was developed for the KU Leuven Data
-                    Visualisation course and focuses on interactive
-                    exploratory analysis and comparative policy insights.
+                    The project was developed for the KU Leuven
+                    Data Visualisation course.
 
                 </p>
 
@@ -101,7 +96,8 @@
                href="https://gemeente-stadsmonitor.vlaanderen.be/"
                target="_blank">
 
-                View dataset source
+                Dataset Source
+
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
             </a>
@@ -111,7 +107,7 @@
     </section>
 
     <!-- ========================= -->
-    <!-- KPI ROW -->
+    <!-- KPI -->
     <!-- ========================= -->
 
     <section class="stats-row">
@@ -186,11 +182,11 @@
     <!-- TABLEAU -->
     <!-- ========================= -->
 
-    <section class="dashboard-wrapper">
+    <section class="dashboard-section">
 
         <div class="dashboard-card">
 
-            <div class="dashboard-header">
+            <div class="dashboard-title">
 
                 <h2>
                     Regression analysis between cultural expenditure and municipal satisfaction
@@ -273,8 +269,11 @@
             </h3>
 
             <p>
-                The regression analysis suggests a moderate positive relationship
-                between cultural expenditure and citizen satisfaction indicators.
+
+                The regression analysis suggests a moderate
+                positive relationship between municipal
+                cultural expenditure and citizen satisfaction.
+
             </p>
 
         </div>
@@ -286,8 +285,11 @@
             </h3>
 
             <p>
-                Several municipalities outperform expected satisfaction levels,
-                suggesting that expenditure alone does not fully explain citizen perception.
+
+                Some municipalities outperform expected
+                satisfaction levels, suggesting that expenditure
+                alone does not fully explain citizen perception.
+
             </p>
 
         </div>
@@ -299,8 +301,10 @@
             </h3>
 
             <p>
-                Interactive visualisation enables comparative analysis,
-                identification of outliers, and exploration of regional differences.
+
+                Interactive visualisation enables comparative
+                analysis and identification of regional outliers.
+
             </p>
 
         </div>
@@ -321,9 +325,9 @@
 
             <p>
 
-                This dashboard was developed as part of the KU Leuven
-                Data Visualisation course using the Vlaamse
-                Gemeente-Stadsmonitor dataset for academic purposes only.
+                This dashboard was developed as part
+                of the KU Leuven Data Visualisation course
+                using the Vlaamse Gemeente-Stadsmonitor dataset.
 
             </p>
 
@@ -355,7 +359,7 @@
 
         vizElement.style.width = '100%';
 
-        vizElement.style.height = '1200px';
+        vizElement.style.height = '1350px';
 
         var scriptElement =
             document.createElement('script');
@@ -365,14 +369,9 @@
 
         vizElement.parentNode.insertBefore(
             scriptElement,
-            vizElement
-        );
+            vizElement);
 
     </script>
-
-    <!-- JS -->
-
-    <script src="script.js"></script>
 
 </body>
 
