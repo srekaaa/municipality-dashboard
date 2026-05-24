@@ -9,7 +9,7 @@
           content="width=device-width, initial-scale=1.0">
 
     <title>
-        Municipal Policy Dashboard
+        Municipal Cultural Dashboard
     </title>
 
     <!-- CSS -->
@@ -31,96 +31,228 @@
 <body>
 
     <!-- ========================= -->
-    <!-- HERO -->
+    <!-- TOPBAR -->
     <!-- ========================= -->
 
-    <section class="hero">
+    <header class="topbar">
 
-        <!-- NAVBAR -->
+        <div class="topbar-left">
 
-        <nav class="navbar">
+            <h1>
+                Municipal Dashboard
+            </h1>
 
-            <div class="nav-left">
+            <p>
+                KU Leuven Data Visualisation Project
+            </p>
+
+        </div>
+
+        <div class="topbar-right">
+
+            <button class="active">
+                Culture
+            </button>
+
+            <button>
+                Mobility
+            </button>
+
+            <button>
+                Nature
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- INTRO -->
+    <!-- ========================= -->
+
+    <section class="intro-section">
+
+        <div class="intro-card">
+
+            <div class="intro-text">
+
+                <span class="intro-label">
+                    MUNICIPAL ANALYTICS
+                </span>
 
                 <h2>
-                    Municipal Dashboard
+                    Cultural expenditure and citizen satisfaction across Flemish municipalities
+                </h2>
+
+                <p>
+
+                    This dashboard explores the relationship between municipal
+                    cultural expenditure and citizen satisfaction indicators
+                    using data from the Vlaamse Gemeente-Stadsmonitor.
+                    The project was developed for the KU Leuven Data
+                    Visualisation course and focuses on interactive
+                    exploratory analysis and comparative policy insights.
+
+                </p>
+
+            </div>
+
+            <a class="dataset-link"
+               href="https://gemeente-stadsmonitor.vlaanderen.be/"
+               target="_blank">
+
+                View dataset source
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- KPI ROW -->
+    <!-- ========================= -->
+
+    <section class="stats-row">
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                <i class="fa-solid fa-chart-column"></i>
+            </div>
+
+            <h3>
+                166.40
+            </h3>
+
+            <p>
+                Average expenditure
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <h3>
+                143.75
+            </h3>
+
+            <p>
+                Median expenditure
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                <i class="fa-solid fa-trophy"></i>
+            </div>
+
+            <h3>
+                1545.09
+            </h3>
+
+            <p>
+                Highest municipality
+            </p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <div class="stat-icon">
+                <i class="fa-solid fa-arrow-trend-down"></i>
+            </div>
+
+            <h3>
+                12.30
+            </h3>
+
+            <p>
+                Lowest municipality
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- TABLEAU -->
+    <!-- ========================= -->
+
+    <section class="dashboard-wrapper">
+
+        <div class="dashboard-card">
+
+            <div class="dashboard-header">
+
+                <h2>
+                    Regression analysis between cultural expenditure and municipal satisfaction
                 </h2>
 
             </div>
 
-            <div class="nav-center">
+            <div class='tableauPlaceholder'
+                 id='viz1746999999999'>
 
-                <button class="active">
-                    Culture
-                </button>
+                <noscript>
 
-                <button>
-                    Mobility
-                </button>
+                    <a href='#'>
 
-                <button>
-                    Nature
-                </button>
+                        <img alt='Dashboard'
+                             src='https://public.tableau.com/static/images/re/regression_17774067236030/Dashboardculture/1_rss.png'
+                             style='border: none' />
 
-            </div>
+                    </a>
 
-        </nav>
+                </noscript>
 
-        <!-- HERO CONTENT -->
+                <object class='tableauViz'
+                        style='display:none;'>
 
-        <div class="hero-content">
+                    <param name='host_url'
+                           value='https%3A%2F%2Fpublic.tableau.com%2F' />
 
-            <!-- LEFT -->
+                    <param name='embed_code_version'
+                           value='3' />
 
-            <div class="hero-text">
+                    <param name='site_root'
+                           value='' />
 
-                <!-- DATASET LINK -->
+                    <param name='name'
+                           value='regression_17774067236030/Dashboardculture' />
 
-                <a class="dataset-link"
-                   href="https://gemeente-stadsmonitor.vlaanderen.be/"
-                   target="_blank">
+                    <param name='tabs'
+                           value='no' />
 
-                    Municipality dataset:
-                    gemeente-stadsmonitor.vlaanderen.be
+                    <param name='toolbar'
+                           value='no' />
 
-                </a>
+                    <param name='animate_transition'
+                           value='yes' />
 
-                <!-- TITLE -->
+                    <param name='display_static_image'
+                           value='yes' />
 
-                <h1>
-                    Understanding how municipal expenditure influences citizen satisfaction.
-                </h1>
+                    <param name='display_spinner'
+                           value='yes' />
 
-                <!-- DESCRIPTION -->
+                    <param name='display_overlay'
+                           value='yes' />
 
-                <p class="hero-description">
+                    <param name='display_count'
+                           value='yes' />
 
-                    Interactive policy analytics dashboard
-                    combining expenditure indicators,
-                    civic engagement metrics and
-                    satisfaction trends across Belgian municipalities.
+                    <param name='language'
+                           value='en-US' />
 
-                </p>
-
-                <!-- BUTTON -->
-
-                <a href="#dashboard"
-                   class="hero-button">
-
-                    Explore Dashboard
-
-                    <i class="fa-solid fa-arrow-down"></i>
-
-                </a>
-
-            </div>
-
-            <!-- RIGHT -->
-
-            <div class="hero-image">
-
-                <img src="assets/images/hero-dashboard.png"
-                     alt="Dashboard Hero Image">
+                </object>
 
             </div>
 
@@ -129,270 +261,85 @@
     </section>
 
     <!-- ========================= -->
-    <!-- DASHBOARD -->
+    <!-- INSIGHTS -->
     <!-- ========================= -->
 
-    <main class="dashboard-section"
-          id="dashboard">
+    <section class="insights-section">
 
-        <!-- KPI ROW -->
+        <div class="insight-card">
 
-        <section class="stats-row">
+            <h3>
+                Correlation
+            </h3>
 
-            <div class="stat-card">
+            <p>
+                The regression analysis suggests a moderate positive relationship
+                between cultural expenditure and citizen satisfaction indicators.
+            </p>
 
-                <div class="stat-icon">
-                    <i class="fa-solid fa-chart-column"></i>
-                </div>
+        </div>
 
-                <h2>
-                    166.40
-                </h2>
+        <div class="insight-card">
 
-                <p>
-                    Average expenditure
-                </p>
+            <h3>
+                Municipal Variation
+            </h3>
 
-            </div>
+            <p>
+                Several municipalities outperform expected satisfaction levels,
+                suggesting that expenditure alone does not fully explain citizen perception.
+            </p>
 
-            <div class="stat-card">
+        </div>
 
-                <div class="stat-icon">
-                    <i class="fa-solid fa-chart-line"></i>
-                </div>
+        <div class="insight-card">
 
-                <h2>
-                    143.75
-                </h2>
+            <h3>
+                Exploratory Analysis
+            </h3>
 
-                <p>
-                    Median expenditure
-                </p>
+            <p>
+                Interactive visualisation enables comparative analysis,
+                identification of outliers, and exploration of regional differences.
+            </p>
 
-            </div>
+        </div>
 
-            <div class="stat-card">
+    </section>
 
-                <div class="stat-icon">
-                    <i class="fa-solid fa-trophy"></i>
-                </div>
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
 
-                <h2>
-                    1545.09
-                </h2>
+    <footer class="footer">
 
-                <p>
-                    Highest municipality
-                </p>
+        <div class="footer-text">
 
-            </div>
+            <h3>
+                Academic Disclaimer
+            </h3>
 
-            <div class="stat-card">
+            <p>
 
-                <div class="stat-icon">
-                    <i class="fa-solid fa-arrow-trend-down"></i>
-                </div>
+                This dashboard was developed as part of the KU Leuven
+                Data Visualisation course using the Vlaamse
+                Gemeente-Stadsmonitor dataset for academic purposes only.
 
-                <h2>
-                    12.30
-                </h2>
+            </p>
 
-                <p>
-                    Lowest municipality
-                </p>
+        </div>
 
-            </div>
+        <div class="footer-logos">
 
-        </section>
+            <img src="assets/images/kuleuven-logo.png"
+                 alt="KU Leuven Logo">
 
-        <!-- ========================= -->
-        <!-- TABLEAU -->
-        <!-- ========================= -->
+            <img src="assets/images/flanders_logo.png"
+                 alt="Flanders Logo">
 
-        <section class="main-grid">
+        </div>
 
-            <section class="large-card">
-
-                <h3>
-                    Regression analysis between cultural expenditure and municipal satisfaction
-                </h3>
-
-                <div class='tableauPlaceholder'
-                     id='viz1746999999999'>
-
-                    <noscript>
-
-                        <a href='#'>
-
-                            <img alt='Dashboard'
-                                 src='https://public.tableau.com/static/images/re/regression_17774067236030/Dashboardculture/1_rss.png'
-                                 style='border: none' />
-
-                        </a>
-
-                    </noscript>
-
-                    <object class='tableauViz'
-                            style='display:none;'>
-
-                        <param name='host_url'
-                               value='https%3A%2F%2Fpublic.tableau.com%2F' />
-
-                        <param name='embed_code_version'
-                               value='3' />
-
-                        <param name='site_root'
-                               value='' />
-
-                        <param name='name'
-                               value='regression_17774067236030/Dashboardculture' />
-
-                        <param name='tabs'
-                               value='no' />
-
-                        <param name='toolbar'
-                               value='no' />
-
-                        <param name='animate_transition'
-                               value='yes' />
-
-                        <param name='display_static_image'
-                               value='yes' />
-
-                        <param name='display_spinner'
-                               value='yes' />
-
-                        <param name='display_overlay'
-                               value='yes' />
-
-                        <param name='display_count'
-                               value='yes' />
-
-                        <param name='language'
-                               value='en-US' />
-
-                    </object>
-
-                </div>
-
-            </section>
-
-        </section>
-
-        <!-- ========================= -->
-        <!-- INSIGHTS -->
-        <!-- ========================= -->
-
-        <section class="insights-grid">
-
-            <section class="side-panel">
-
-                <h3>
-                    Key Insights
-                </h3>
-
-                <div class="insight-box">
-
-                    <h4>
-                        Correlation
-                    </h4>
-
-                    <p>
-                        The regression analysis suggests a moderate
-                        positive relationship between municipal
-                        cultural expenditure and citizen satisfaction indicators.
-                    </p>
-
-                </div>
-
-                <div class="insight-box">
-
-                    <h4>
-                        Outlier
-                    </h4>
-
-                    <p>
-                        Leuven demonstrates relatively high
-                        citizen satisfaction despite only
-                        moderate expenditure intensity.
-                    </p>
-
-                </div>
-
-                <div class="insight-box">
-
-                    <h4>
-                        Participation
-                    </h4>
-
-                    <p>
-                        Social engagement metrics appear
-                        positively associated with investment
-                        in community infrastructure.
-                    </p>
-
-                </div>
-
-            </section>
-
-        </section>
-
-        <!-- ========================= -->
-        <!-- BOTTOM -->
-        <!-- ========================= -->
-
-        <section class="bottom-grid">
-
-            <!-- PIE -->
-
-            <section class="small-card">
-
-                <h3>
-                    Segments meeting places
-                </h3>
-
-                <canvas id="pieChart"></canvas>
-
-            </section>
-
-            <!-- DISCLAIMER -->
-
-            <section class="footer-card">
-
-                <div class="footer-left">
-
-                    <h3>
-                        Academic Disclaimer
-                    </h3>
-
-                    <p>
-
-                        This dashboard was developed as part
-                        of a KU Leuven Data Science coursework
-                        project for academic and educational
-                        purposes only.
-
-                    </p>
-
-                </div>
-
-                <!-- LOGOS -->
-
-                <div class="footer-logos">
-
-                    <img src="assets/images/kuleuven-logo.png"
-                         alt="KU Leuven Logo">
-
-                    <img src="assets/images/flanders_logo.png"
-                         alt="Flanders Dataset Logo">
-
-                </div>
-
-            </section>
-
-        </section>
-
-    </main>
+    </footer>
 
     <!-- ========================= -->
     <!-- TABLEAU SCRIPT -->
@@ -408,7 +355,7 @@
 
         vizElement.style.width = '100%';
 
-        vizElement.style.height = '860px';
+        vizElement.style.height = '1200px';
 
         var scriptElement =
             document.createElement('script');
