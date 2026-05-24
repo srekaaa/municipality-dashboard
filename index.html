@@ -12,12 +12,8 @@
         Municipal Dashboard
     </title>
 
-    <!-- CSS -->
-
     <link rel="stylesheet"
           href="style.css">
-
-    <!-- FONT AWESOME -->
 
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -26,9 +22,7 @@
 
 <body>
 
-    <!-- ========================= -->
-    <!-- TOP BAR -->
-    <!-- ========================= -->
+    <!-- TOPBAR -->
 
     <header class="topbar">
 
@@ -62,9 +56,7 @@
 
     </header>
 
-    <!-- ========================= -->
     <!-- INTRO -->
-    <!-- ========================= -->
 
     <section class="intro-section">
 
@@ -85,8 +77,6 @@
                     This dashboard explores the relationship between municipal
                     cultural expenditure and citizen satisfaction indicators
                     using data from the Vlaamse Gemeente-Stadsmonitor.
-                    The project was developed for the KU Leuven
-                    Data Visualisation course.
 
                 </p>
 
@@ -106,9 +96,7 @@
 
     </section>
 
-    <!-- ========================= -->
     <!-- KPI -->
-    <!-- ========================= -->
 
     <section class="stats-row">
 
@@ -118,13 +106,9 @@
                 <i class="fa-solid fa-chart-column"></i>
             </div>
 
-            <h3>
-                166.40
-            </h3>
+            <h3>166.40</h3>
 
-            <p>
-                Average expenditure
-            </p>
+            <p>Average expenditure</p>
 
         </div>
 
@@ -134,13 +118,9 @@
                 <i class="fa-solid fa-chart-line"></i>
             </div>
 
-            <h3>
-                143.75
-            </h3>
+            <h3>143.75</h3>
 
-            <p>
-                Median expenditure
-            </p>
+            <p>Median expenditure</p>
 
         </div>
 
@@ -150,13 +130,9 @@
                 <i class="fa-solid fa-trophy"></i>
             </div>
 
-            <h3>
-                1545.09
-            </h3>
+            <h3>1545.09</h3>
 
-            <p>
-                Highest municipality
-            </p>
+            <p>Highest municipality</p>
 
         </div>
 
@@ -166,21 +142,15 @@
                 <i class="fa-solid fa-arrow-trend-down"></i>
             </div>
 
-            <h3>
-                12.30
-            </h3>
+            <h3>12.30</h3>
 
-            <p>
-                Lowest municipality
-            </p>
+            <p>Lowest municipality</p>
 
         </div>
 
     </section>
 
-    <!-- ========================= -->
     <!-- TABLEAU -->
-    <!-- ========================= -->
 
     <section class="dashboard-section">
 
@@ -230,6 +200,9 @@
                     <param name='toolbar'
                            value='no' />
 
+                    <param name='device'
+                           value='desktop' />
+
                     <param name='animate_transition'
                            value='yes' />
 
@@ -256,9 +229,7 @@
 
     </section>
 
-    <!-- ========================= -->
     <!-- INSIGHTS -->
-    <!-- ========================= -->
 
     <section class="insights-section">
 
@@ -286,9 +257,8 @@
 
             <p>
 
-                Some municipalities outperform expected
-                satisfaction levels, suggesting that expenditure
-                alone does not fully explain citizen perception.
+                Several municipalities outperform expected
+                satisfaction levels despite moderate expenditure.
 
             </p>
 
@@ -303,7 +273,7 @@
             <p>
 
                 Interactive visualisation enables comparative
-                analysis and identification of regional outliers.
+                analysis and regional exploration.
 
             </p>
 
@@ -311,9 +281,7 @@
 
     </section>
 
-    <!-- ========================= -->
     <!-- FOOTER -->
-    <!-- ========================= -->
 
     <footer class="footer">
 
@@ -345,9 +313,7 @@
 
     </footer>
 
-    <!-- ========================= -->
     <!-- TABLEAU SCRIPT -->
-    <!-- ========================= -->
 
     <script type='text/javascript'>
 
@@ -359,7 +325,7 @@
 
         vizElement.style.width = '100%';
 
-        vizElement.style.height = '1350px';
+        vizElement.style.height = '950px';
 
         var scriptElement =
             document.createElement('script');
