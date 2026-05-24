@@ -3,7 +3,7 @@
 
 <head>
 
-    <meta charset="UTF-32">
+    <meta charset="UTF-8">
 
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
@@ -12,11 +12,17 @@
         Municipal Policy Dashboard
     </title>
 
+    <!-- CSS -->
+
     <link rel="stylesheet"
           href="style.css">
 
+    <!-- ICONS -->
+
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CHART JS -->
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
@@ -24,7 +30,9 @@
 
 <body>
 
+    <!-- ========================= -->
     <!-- HERO -->
+    <!-- ========================= -->
 
     <section class="hero">
 
@@ -66,7 +74,16 @@
 
             <div class="hero-text">
 
+                <!-- DATASET LINK -->
 
+                <a class="dataset-link"
+                   href="https://gemeente-stadsmonitor.vlaanderen.be/"
+                   target="_blank">
+
+                    Municipality dataset:
+                    gemeente-stadsmonitor.vlaanderen.be
+
+                </a>
 
                 <!-- TITLE -->
 
@@ -111,12 +128,14 @@
 
     </section>
 
+    <!-- ========================= -->
     <!-- DASHBOARD -->
+    <!-- ========================= -->
 
     <main class="dashboard-section"
           id="dashboard">
 
-        <!-- KPI -->
+        <!-- KPI ROW -->
 
         <section class="stats-row">
 
@@ -126,7 +145,9 @@
                     <i class="fa-solid fa-chart-column"></i>
                 </div>
 
-                <h2>166.40</h2>
+                <h2>
+                    166.40
+                </h2>
 
                 <p>
                     Average expenditure
@@ -140,7 +161,9 @@
                     <i class="fa-solid fa-chart-line"></i>
                 </div>
 
-                <h2>143.75</h2>
+                <h2>
+                    143.75
+                </h2>
 
                 <p>
                     Median expenditure
@@ -154,7 +177,9 @@
                     <i class="fa-solid fa-trophy"></i>
                 </div>
 
-                <h2>1545.09</h2>
+                <h2>
+                    1545.09
+                </h2>
 
                 <p>
                     Highest municipality
@@ -168,7 +193,9 @@
                     <i class="fa-solid fa-arrow-trend-down"></i>
                 </div>
 
-                <h2>12.30</h2>
+                <h2>
+                    12.30
+                </h2>
 
                 <p>
                     Lowest municipality
@@ -178,11 +205,11 @@
 
         </section>
 
-        <!-- MAIN GRID -->
+        <!-- ========================= -->
+        <!-- TABLEAU -->
+        <!-- ========================= -->
 
         <section class="main-grid">
-
-            <!-- TABLEAU -->
 
             <section class="large-card">
 
@@ -250,7 +277,13 @@
 
             </section>
 
-            <!-- INSIGHTS -->
+        </section>
+
+        <!-- ========================= -->
+        <!-- INSIGHTS -->
+        <!-- ========================= -->
+
+        <section class="insights-grid">
 
             <section class="side-panel">
 
@@ -265,9 +298,9 @@
                     </h4>
 
                     <p>
-                        Municipalities with higher cultural
-                        expenditure generally demonstrate
-                        stronger citizen satisfaction scores.
+                        The regression analysis suggests a moderate
+                        positive relationship between municipal
+                        cultural expenditure and citizen satisfaction indicators.
                     </p>
 
                 </div>
@@ -304,7 +337,9 @@
 
         </section>
 
+        <!-- ========================= -->
         <!-- BOTTOM -->
+        <!-- ========================= -->
 
         <section class="bottom-grid">
 
@@ -335,9 +370,7 @@
                         This dashboard was developed as part
                         of a KU Leuven Data Science coursework
                         project for academic and educational
-                        purposes only. Municipality dataset:
-                        gemeente-stadsmonitor.vlaanderen.be
-
+                        purposes only.
 
                     </p>
 
@@ -361,7 +394,9 @@
 
     </main>
 
-    <!-- TABLEAU -->
+    <!-- ========================= -->
+    <!-- TABLEAU SCRIPT -->
+    <!-- ========================= -->
 
     <script type='text/javascript'>
 
@@ -373,7 +408,7 @@
 
         vizElement.style.width = '100%';
 
-        vizElement.style.height = '780px';
+        vizElement.style.height = '860px';
 
         var scriptElement =
             document.createElement('script');
@@ -387,6 +422,8 @@
         );
 
     </script>
+
+    <!-- JS -->
 
     <script src="script.js"></script>
 
