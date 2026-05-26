@@ -74,9 +74,9 @@
 
                 <p>
 
-                    This dashboard explores the relationship between municipal
-                    cultural expenditure and citizen satisfaction indicators
-                    using data from the Vlaamse Gemeente-Stadsmonitor.
+                    This dashboard explores relationships between
+                    municipal expenditure and citizen satisfaction
+                    indicators using the Vlaamse Gemeente-Stadsmonitor dataset.
 
                 </p>
 
@@ -150,7 +150,7 @@
 
     </section>
 
-    <!-- TABLEAU -->
+    <!-- DASHBOARD 1 -->
 
     <section class="dashboard-section">
 
@@ -165,22 +165,9 @@
             </div>
 
             <div class='tableauPlaceholder'
-                 id='viz1746999999999'>
+                 id='vizRegression'>
 
-                <noscript>
-
-                    <a href='#'>
-
-                        <img alt='Dashboard'
-                             src='https://public.tableau.com/static/images/re/regression_17774067236030/Dashboardculture/1_rss.png'
-                             style='border: none' />
-
-                    </a>
-
-                </noscript>
-
-                <object class='tableauViz'
-                        style='display:none;'>
+                <object class='tableauViz'>
 
                     <param name='host_url'
                            value='https%3A%2F%2Fpublic.tableau.com%2F' />
@@ -200,26 +187,50 @@
                     <param name='toolbar'
                            value='no' />
 
-                    <param name='device'
-                           value='desktop' />
+                </object>
 
-                    <param name='animate_transition'
-                           value='yes' />
+            </div>
 
-                    <param name='display_static_image'
-                           value='yes' />
+        </div>
 
-                    <param name='display_spinner'
-                           value='yes' />
+    </section>
 
-                    <param name='display_overlay'
-                           value='yes' />
+    <!-- DASHBOARD 2 -->
 
-                    <param name='display_count'
-                           value='yes' />
+    <section class="dashboard-section">
 
-                    <param name='language'
-                           value='en-US' />
+        <div class="dashboard-card">
+
+            <div class="dashboard-title">
+
+                <h2>
+                    Spending versus satisfaction scatterplot analysis
+                </h2>
+
+            </div>
+
+            <div class='tableauPlaceholder'
+                 id='vizScatter'>
+
+                <object class='tableauViz'>
+
+                    <param name='host_url'
+                           value='https%3A%2F%2Fpublic.tableau.com%2F' />
+
+                    <param name='embed_code_version'
+                           value='3' />
+
+                    <param name='site_root'
+                           value='' />
+
+                    <param name='name'
+                           value='scater_17796431247200/SpendingvsSatisfaction' />
+
+                    <param name='tabs'
+                           value='no' />
+
+                    <param name='toolbar'
+                           value='no' />
 
                 </object>
 
@@ -241,9 +252,8 @@
 
             <p>
 
-                The regression analysis suggests a moderate
-                positive relationship between municipal
-                cultural expenditure and citizen satisfaction.
+                Municipalities with higher cultural expenditure
+                generally demonstrate stronger satisfaction scores.
 
             </p>
 
@@ -252,13 +262,13 @@
         <div class="insight-card">
 
             <h3>
-                Municipal Variation
+                Outliers
             </h3>
 
             <p>
 
-                Several municipalities outperform expected
-                satisfaction levels despite moderate expenditure.
+                Certain municipalities outperform expected values,
+                indicating additional explanatory variables.
 
             </p>
 
@@ -272,8 +282,8 @@
 
             <p>
 
-                Interactive visualisation enables comparative
-                analysis and regional exploration.
+                Interactive dashboards allow comparative
+                regional exploration and policy interpretation.
 
             </p>
 
@@ -293,9 +303,9 @@
 
             <p>
 
-                This dashboard was developed as part
-                of the KU Leuven Data Visualisation course
-                using the Vlaamse Gemeente-Stadsmonitor dataset.
+                This dashboard was developed as part of the
+                KU Leuven Data Visualisation course using
+                Vlaamse Gemeente-Stadsmonitor data.
 
             </p>
 
@@ -317,25 +327,24 @@
 
     <script type='text/javascript'>
 
-        var divElement =
-            document.getElementById('viz1746999999999');
+        const vizElements =
+            document.querySelectorAll('.tableauViz');
 
-        var vizElement =
-            divElement.getElementsByTagName('object')[0];
+        vizElements.forEach(viz => {
 
-        vizElement.style.width = '100%';
+            viz.style.width = '100%';
 
-        vizElement.style.height = '950px';
+            viz.style.height = '900px';
 
-        var scriptElement =
+        });
+
+        const scriptElement =
             document.createElement('script');
 
         scriptElement.src =
             'https://public.tableau.com/javascripts/api/viz_v1.js';
 
-        vizElement.parentNode.insertBefore(
-            scriptElement,
-            vizElement);
+        document.body.appendChild(scriptElement);
 
     </script>
 
