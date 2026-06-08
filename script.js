@@ -1,101 +1,87 @@
-// =========================
-// PIE CHART
-// =========================
+```javascript id="8p2euw"
+// =================================
+// TABLEAU EMBEDS
+// =================================
 
-const pieCtx =
-    document.getElementById('pieChart');
+const vizElements =
+    document.querySelectorAll('.tableauViz');
 
-new Chart(pieCtx, {
+vizElements.forEach(viz => {
 
-    type: 'pie',
+    viz.style.width = '100%';
+    viz.style.height = '900px';
 
-    data: {
-
-        labels: [
-            'Agree',
-            'Neutral',
-            'Disagree'
-        ],
-
-        datasets: [{
-
-            data: [58, 25, 17],
-
-            backgroundColor: [
-                '#66bb6a',
-                '#bdbdbd',
-                '#ef5350'
-            ],
-
-            borderWidth: 0
-
-        }]
-    },
-
-    options: {
-
-        responsive: true,
-
-        maintainAspectRatio: false,
-
-        plugins: {
-
-            legend: {
-
-                position: 'bottom',
-
-                labels: {
-
-                    padding: 20,
-
-                    font: {
-                        size: 14
-                    }
-                }
-            }
-        }
-    }
 });
 
+// Load Tableau API
 
-// =========================
-// TAB BUTTON INTERACTIONS
-// =========================
+const scriptElement =
+    document.createElement('script');
 
-const tabs =
-    document.querySelectorAll('.nav-center button');
+scriptElement.src =
+    'https://public.tableau.com/javascripts/api/viz_v1.js';
 
-tabs.forEach(tab => {
+document.body.appendChild(scriptElement);
 
-    tab.addEventListener('click', () => {
 
-        tabs.forEach(btn => {
-            btn.classList.remove('active');
+// =================================
+// SMOOTH NAVIGATION ACTIVE STATE
+// =================================
+
+const navLinks =
+    document.querySelectorAll('.navbar nav a');
+
+navLinks.forEach(link => {
+
+    link.addEventListener('click', () => {
+
+        navLinks.forEach(item => {
+            item.classList.remove('active-nav');
         });
 
-        tab.classList.add('active');
+        link.classList.add('active-nav');
 
     });
 
 });
 
 
-// =========================
-// CARD HOVER EFFECT
-// =========================
+// =================================
+// REVEAL ANIMATIONS
+// =================================
 
-const cards =
-    document.querySelectorAll(
-        '.stat-card, .large-card, .side-panel, .small-card'
+const observer =
+    new IntersectionObserver(
+
+        entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target.classList.add('show');
+
+                }
+
+            });
+
+        },
+
+        {
+            threshold: 0.15
+        }
+
     );
 
-cards.forEach(card => {
+document
+    .querySelectorAll(
+        '.method-card, .dashboard-story, .finding-card, .limitations-card'
+    )
+    .forEach(element => {
 
-    card.addEventListener('mouseenter', () => {
+        element.classList.add('hidden');
 
-        card.style.transition =
-            'transform 0.2s ease';
+        observer.observe(element);
 
     });
-
-});
+```
