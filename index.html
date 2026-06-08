@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿```html
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -32,9 +33,9 @@
 
 <body>
 
-    <!-- ================================= -->
+    <!-- ============================== -->
     <!-- NAVIGATION -->
-    <!-- ================================= -->
+    <!-- ============================== -->
 
     <header class="navbar">
 
@@ -72,57 +73,54 @@
 
     </header>
 
-    <!-- ================================= -->
+    <!-- ============================== -->
     <!-- HERO -->
-    <!-- ================================= -->
+    <!-- ============================== -->
 
     <section id="overview"
              class="hero-section">
 
         <div class="hero-card">
 
-            <div class="hero-content">
+            <span class="section-label">
+                MUNICIPAL ANALYTICS PROJECT
+            </span>
 
-                <span class="section-label">
-                    MUNICIPAL ANALYTICS PROJECT
-                </span>
+            <h2>
 
-                <h2>
+                Does cultural expenditure influence citizen satisfaction?
 
-                    Does cultural expenditure influence citizen satisfaction?
+            </h2>
 
-                </h2>
+            <p>
 
-                <p>
+                This project investigates whether municipal expenditure
+                on cultural activities contributes to stronger citizen
+                satisfaction outcomes across Flemish municipalities.
 
-                    This project investigates whether higher municipal expenditure
-                    on cultural and leisure activities is associated with stronger
-                    citizen satisfaction outcomes across Flemish municipalities.
+                Using data from the Vlaamse Gemeente-Stadsmonitor,
+                interactive dashboards were created to explore
+                relationships, identify patterns and support
+                evidence-based policy interpretation.
 
-                    Using data from the Vlaamse Gemeente-Stadsmonitor,
-                    interactive dashboards were developed to explore patterns,
-                    identify outliers and support evidence-based interpretation.
+            </p>
 
-                </p>
+            <div class="hero-buttons">
 
-                <div class="hero-buttons">
+                <a class="primary-btn"
+                   href="https://gemeente-stadsmonitor.vlaanderen.be/"
+                   target="_blank">
 
-                    <a class="primary-btn"
-                       href="https://gemeente-stadsmonitor.vlaanderen.be/"
-                       target="_blank">
+                    View Dataset
 
-                        View Dataset
+                </a>
 
-                    </a>
+                <a class="secondary-btn"
+                   href="#methodology">
 
-                    <a class="secondary-btn"
-                       href="#methodology">
+                    Methodology
 
-                        Methodology
-
-                    </a>
-
-                </div>
+                </a>
 
             </div>
 
@@ -130,9 +128,9 @@
 
     </section>
 
-    <!-- ================================= -->
+    <!-- ============================== -->
     <!-- METHODOLOGY -->
-    <!-- ================================= -->
+    <!-- ============================== -->
 
     <section id="methodology"
              class="methodology-section">
@@ -160,9 +158,7 @@
                 </h3>
 
                 <p>
-
                     Vlaamse Gemeente-Stadsmonitor
-
                 </p>
 
             </div>
@@ -176,9 +172,7 @@
                 </h3>
 
                 <p>
-
-                    Cultural expenditure and citizen satisfaction indicators
-
+                    Cultural expenditure and satisfaction indicators
                 </p>
 
             </div>
@@ -192,9 +186,7 @@
                 </h3>
 
                 <p>
-
                     Flemish municipalities
-
                 </p>
 
             </div>
@@ -208,9 +200,7 @@
                 </h3>
 
                 <p>
-
                     Interactive visual analytics using Tableau
-
                 </p>
 
             </div>
@@ -219,9 +209,9 @@
 
     </section>
 
-    <!-- ================================= -->
+    <!-- ============================== -->
     <!-- DASHBOARD 1 -->
-    <!-- ================================= -->
+    <!-- ============================== -->
 
     <section id="dashboards"
              class="dashboard-story">
@@ -240,8 +230,8 @@
 
                 <p>
 
-                    Investigating the relationship between cultural expenditure
-                    and municipal satisfaction.
+                    Investigating the relationship between cultural
+                    expenditure and municipal satisfaction.
 
                 </p>
 
@@ -251,32 +241,12 @@
 
         <div class="dashboard-card">
 
-            <div class='tableauPlaceholder'
-                 id='vizRegression'>
-
-                <object class='tableauViz'>
-
-                    <param name='host_url'
-                           value='https%3A%2F%2Fpublic.tableau.com%2F' />
-
-                    <param name='embed_code_version'
-                           value='3' />
-
-                    <param name='site_root'
-                           value='' />
-
-                    <param name='name'
-                           value='regression_17774067236030/Dashboardculture' />
-
-                    <param name='tabs'
-                           value='no' />
-
-                    <param name='toolbar'
-                           value='no' />
-
-                </object>
-
-            </div>
+            <iframe src="https://public.tableau.com/views/regression_17774067236030/Dashboardculture?:showVizHome=no"
+                    width="100%"
+                    height="950"
+                    frameborder="0"
+                    allowfullscreen>
+            </iframe>
 
         </div>
 
@@ -288,10 +258,9 @@
 
             <p>
 
-                The regression dashboard provides an overview of how
-                expenditure levels relate to perceived cultural satisfaction.
-                It allows identification of municipalities that perform above
-                or below expectations relative to spending levels.
+                The regression dashboard explores whether municipalities
+                with higher cultural expenditure tend to achieve stronger
+                citizen satisfaction outcomes.
 
             </p>
 
@@ -299,9 +268,9 @@
 
     </section>
 
-    <!-- ================================= -->
+    <!-- ============================== -->
     <!-- DASHBOARD 2 -->
-    <!-- ================================= -->
+    <!-- ============================== -->
 
     <section class="dashboard-story">
 
@@ -319,7 +288,8 @@
 
                 <p>
 
-                    Comparing municipalities and identifying regional patterns.
+                    Comparing municipalities and exploring local
+                    differences in performance.
 
                 </p>
 
@@ -329,32 +299,12 @@
 
         <div class="dashboard-card">
 
-            <div class='tableauPlaceholder'
-                 id='vizComparison'>
-
-                <object class='tableauViz'>
-
-                    <param name='host_url'
-                           value='https%3A%2F%2Fpublic.tableau.com%2F' />
-
-                    <param name='embed_code_version'
-                           value='3' />
-
-                    <param name='site_root'
-                           value='' />
-
-                    <param name='name'
-                           value='scater_17796431247200/Dashboard1' />
-
-                    <param name='tabs'
-                           value='no' />
-
-                    <param name='toolbar'
-                           value='no' />
-
-                </object>
-
-            </div>
+            <iframe src="https://public.tableau.com/views/scater_17796431247200/Dashboard1?:showVizHome=no"
+                    width="100%"
+                    height="950"
+                    frameborder="0"
+                    allowfullscreen>
+            </iframe>
 
         </div>
 
@@ -366,9 +316,9 @@
 
             <p>
 
-                The municipality comparison dashboard supports exploratory
-                analysis by highlighting differences between municipalities
-                and enabling interactive comparison of local performance.
+                Interactive comparison enables identification of
+                municipalities that outperform or underperform
+                relative to their expenditure levels.
 
             </p>
 
@@ -376,9 +326,9 @@
 
     </section>
 
-    <!-- ================================= -->
+    <!-- ============================== -->
     <!-- FINDINGS -->
-    <!-- ================================= -->
+    <!-- ============================== -->
 
     <section id="findings"
              class="findings-section">
@@ -399,20 +349,16 @@
 
             <div class="finding-card">
 
-                <span>
-                    01
-                </span>
+                <span>01</span>
 
                 <h3>
-
                     Positive relationship observed
-
                 </h3>
 
                 <p>
 
-                    Municipalities with higher cultural expenditure
-                    tend to report stronger satisfaction outcomes.
+                    Municipalities with higher expenditure generally
+                    demonstrate stronger satisfaction outcomes.
 
                 </p>
 
@@ -420,20 +366,16 @@
 
             <div class="finding-card">
 
-                <span>
-                    02
-                </span>
+                <span>02</span>
 
                 <h3>
-
                     Outliers exist
-
                 </h3>
 
                 <p>
 
-                    Several municipalities perform better than expected
-                    despite moderate expenditure levels.
+                    Some municipalities perform better than expected
+                    despite relatively modest expenditure.
 
                 </p>
 
@@ -441,20 +383,16 @@
 
             <div class="finding-card">
 
-                <span>
-                    03
-                </span>
+                <span>03</span>
 
                 <h3>
-
                     Context matters
-
                 </h3>
 
                 <p>
 
-                    Expenditure alone does not fully explain variation
-                    in satisfaction outcomes.
+                    Expenditure alone cannot fully explain differences
+                    in satisfaction levels.
 
                 </p>
 
@@ -464,9 +402,9 @@
 
     </section>
 
-    <!-- ================================= -->
+    <!-- ============================== -->
     <!-- LIMITATIONS -->
-    <!-- ================================= -->
+    <!-- ============================== -->
 
     <section class="limitations-section">
 
@@ -478,12 +416,10 @@
 
             <p>
 
-                This analysis is exploratory and focuses on observed
-                relationships between expenditure and satisfaction.
-
-                Correlation does not imply causation and additional
-                demographic, economic and policy-related variables
-                may influence citizen perceptions.
+                This analysis identifies relationships but does not
+                establish causality. Additional socio-economic,
+                demographic and policy factors may influence
+                satisfaction outcomes.
 
             </p>
 
@@ -491,9 +427,9 @@
 
     </section>
 
-    <!-- ================================= -->
+    <!-- ============================== -->
     <!-- FOOTER -->
-    <!-- ================================= -->
+    <!-- ============================== -->
 
     <footer class="footer">
 
@@ -506,7 +442,7 @@
             <p>
 
                 Developed as part of the KU Leuven Data Visualisation
-                course using data from the Vlaamse Gemeente-Stadsmonitor.
+                course using Vlaamse Gemeente-Stadsmonitor data.
 
             </p>
 
