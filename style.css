@@ -43,11 +43,12 @@ body {
 
 .platform-tag {
     font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 2px;
-    color: #DAB1DA;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    color: #9F6BA8;
+    text-transform: uppercase;
     display: block;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
 }
 
 .logo-area h1 {
@@ -114,19 +115,20 @@ body {
 }
 
 .hero-card h2 {
-    font-size: clamp(64px, 8vw, 110px);
-    line-height: 0.95;
-    letter-spacing: -3px;
+    font-size: clamp(82px, 9vw, 140px);
+    line-height: 0.88;
+    letter-spacing: -5px;
     font-weight: 800;
-    max-width: 1000px;
-    margin-bottom: 28px;
+    max-width: 1200px;
+    margin-bottom: 30px;
 }
 
 .hero-card p {
-    max-width: 820px;
-    color: rgba(255,255,255,0.75);
-    font-size: 18px;
-    margin-bottom: 35px;
+    font-size: 22px;
+    line-height: 1.8;
+    max-width: 900px;
+    color: rgba(255,255,255,0.78);
+    margin-bottom: 40px;
 }
 
 .hero-buttons {
@@ -189,11 +191,10 @@ body {
 
 .method-card {
     background: white;
-    border-radius: 20px;
-    padding: 22px;
+    border-radius: 24px;
+    padding: 34px;
     border: 1px solid #ececf3;
-    box-shadow: none;
-    transition: 0.2s ease;
+    transition: 0.25s ease;
 }
 
     .method-card:hover {
@@ -207,13 +208,13 @@ body {
     }
 
     .method-card h3 {
-        font-size: 18px;
-        margin-bottom: 6px;
+        font-size: 24px;
+        margin-bottom: 10px;
     }
 
     .method-card p {
-        font-size: 14px;
-        color: #6b7280;
+        font-size: 17px;
+        line-height: 1.6;
     }
 
 /* ================================= */
