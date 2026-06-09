@@ -48,8 +48,8 @@ body {
 }
 
 .site-logo {
-    width: 5px;
-    height: 5px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
     border-radius: 12px;
     flex-shrink: 0;
