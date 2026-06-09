@@ -100,11 +100,11 @@ body {
 }
 
 .hero-content h2 {
-    font-size: 72px;
+    font-size: 90px;
     line-height: 1;
-    font-weight: 800;
+    font-weight: 900;
     max-width: 1000px;
-    margin-bottom: 25px;
+    margin-bottom: 35px;
 }
 
 .hero-content p {
