@@ -32,7 +32,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: rgba(255,255,255,0.85);
+    background: rgba(255,255,255,0.92);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid #ececf3;
     padding: 30px 7%;
@@ -41,26 +41,25 @@ body {
     align-items: center;
 }
 
-.platform-tag {
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 6px;
-    color: #9D71A8;
-    text-transform: uppercase;
-    margin-bottom: 14px;
+.logo-area {
+    display: block;
 }
 
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+.platform-tag {
+    font-size: 15px;
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: #8E62A5;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: block;
 }
 
 .logo-area h1 {
-    font-size: 52px;
+    font-size: 64px;
     font-weight: 700;
-    letter-spacing: 0px;
-    word-spacing: 4px;
+    letter-spacing: 1px;
+    word-spacing: 10px;
     line-height: 1.15;
     color: #111827;
     margin: 0;
@@ -68,7 +67,7 @@ body {
 
 .navbar nav {
     display: flex;
-    gap: 32px;
+    gap: 40px;
 }
 
     .navbar nav a {
@@ -76,6 +75,7 @@ body {
         font-weight: 600;
         color: #6b7280;
         text-decoration: none;
+        transition: 0.2s ease;
     }
 
         .navbar nav a:hover {
