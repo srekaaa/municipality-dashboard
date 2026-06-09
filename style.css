@@ -42,13 +42,13 @@ body {
 }
 
 .platform-tag {
-    font-size: 11px;
-    font-weight: 800;
-    letter-spacing: 2.5px;
-    color: #9F6BA8;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #7B4D86;
     text-transform: uppercase;
     display: block;
-    margin-bottom: 6px;
+    margin-bottom: 8px;
 }
 
 .logo-area h1 {
@@ -84,13 +84,13 @@ body {
 }
 
 .hero-card {
-    background: linear-gradient( 135deg, #18152A, #2B2248 );
+    background: linear-gradient( 135deg, #171328 0%, #241B42 60%, #31265A 100% );
     color: white;
-    border-radius: 36px;
-    padding: 65px;
+    border-radius: 42px;
+    padding: 90px;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 30px 80px rgba(0,0,0,0.15);
+    box-shadow: 0 40px 100px rgba(0,0,0,0.18);
 }
 
     .hero-card::before {
@@ -115,20 +115,20 @@ body {
 }
 
 .hero-card h2 {
-    font-size: clamp(82px, 9vw, 140px);
-    line-height: 0.88;
-    letter-spacing: -5px;
+    font-size: clamp(90px, 10vw, 155px);
+    line-height: 0.82;
+    letter-spacing: -7px;
     font-weight: 800;
-    max-width: 1200px;
-    margin-bottom: 30px;
+    max-width: 1300px;
+    margin-bottom: 35px;
 }
 
 .hero-card p {
-    font-size: 22px;
-    line-height: 1.8;
-    max-width: 900px;
-    color: rgba(255,255,255,0.78);
-    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 1.9;
+    max-width: 950px;
+    color: rgba(255,255,255,0.82);
+    margin-bottom: 45px;
 }
 
 .hero-buttons {
@@ -164,9 +164,9 @@ body {
 .dashboard-story,
 .findings-section,
 .limitations-section {
-    max-width: 1500px;
-    margin: 70px auto;
-    padding: 0 30px;
+    max-width: 1800px;
+    margin: 90px auto;
+    padding: 0 25px;
 }
 
 .section-header {
@@ -191,9 +191,10 @@ body {
 
 .method-card {
     background: white;
-    border-radius: 24px;
-    padding: 34px;
+    border-radius: 28px;
+    padding: 42px;
     border: 1px solid #ececf3;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
     transition: 0.25s ease;
 }
 
@@ -208,13 +209,13 @@ body {
     }
 
     .method-card h3 {
-        font-size: 24px;
-        margin-bottom: 10px;
+        font-size: 28px;
+        margin-bottom: 12px;
     }
 
     .method-card p {
-        font-size: 17px;
-        line-height: 1.6;
+        font-size: 18px;
+        line-height: 1.7;
     }
 
 /* ================================= */
@@ -229,20 +230,21 @@ body {
 }
 
 .story-number {
-    font-size: 48px;
-    font-weight: 800;
+    font-size: 76px;
+    font-weight: 900;
     color: #DAB1DA;
+    opacity: 0.95;
     line-height: 1;
 }
 
 .story-header h2 {
-    font-size: 48px;
+    font-size: 72px;
     font-weight: 800;
-    letter-spacing: -2px;
-    margin-bottom: 2px;
+    letter-spacing: -4px;
 }
 
 .story-header p {
+    font-size: 20px;
     color: #6b7280;
 }
 
@@ -255,9 +257,9 @@ body {
 
     .dashboard-card iframe {
         width: 100%;
-        height: 950px;
+        height: 1150px;
         border: none;
-        border-radius: 18px;
+        border-radius: 24px;
     }
 
 /* ================================= */
@@ -265,16 +267,22 @@ body {
 /* ================================= */
 
 .takeaway-card {
-    margin-top: 20px;
+    margin-top: 30px;
     background: white;
-    border-left: 5px solid #DAB1DA;
-    border-radius: 18px;
-    padding: 24px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+    border-left: 7px solid #DAB1DA;
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.05);
 }
 
     .takeaway-card h3 {
-        margin-bottom: 8px;
+        font-size: 28px;
+        margin-bottom: 12px;
+    }
+
+    .takeaway-card p {
+        font-size: 18px;
+        line-height: 1.8;
     }
 
 /* ================================= */
@@ -288,20 +296,20 @@ body {
 }
 
 .finding-card {
-    background: white;
-    border-radius: 24px;
-    padding: 30px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    padding: 45px;
+    border-radius: 28px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.05);
 }
 
     .finding-card span {
-        font-size: 42px;
-        font-weight: 800;
+        font-size: 68px;
+        font-weight: 900;
         color: #DAB1DA;
     }
 
     .finding-card h3 {
-        margin: 12px 0;
+        font-size: 30px;
+        margin: 16px 0;
     }
 
 /* ================================= */
