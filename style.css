@@ -35,7 +35,7 @@ body {
     background: rgba(255,255,255,0.92);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid #ececf3;
-    padding: 30px 7%;
+    padding: 18px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,21 +46,20 @@ body {
 }
 
 .platform-tag {
-    font-size: 15px;
-    font-weight: 900;
-    letter-spacing: 8px;
-    color: #8E62A5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: #9D71A8;
     text-transform: uppercase;
-    margin-bottom: 16px;
+    margin-bottom: 6px;
     display: block;
 }
 
 .logo-area h1 {
-    font-size: 64px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    word-spacing: 10px;
-    line-height: 1.15;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    line-height: 1.05;
     color: #111827;
     margin: 0;
 }
@@ -71,7 +70,7 @@ body {
 }
 
     .navbar nav a {
-        font-size: 20px;
+        font-size: 18px;
         font-weight: 600;
         color: #6b7280;
         text-decoration: none;
