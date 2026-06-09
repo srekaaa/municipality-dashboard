@@ -35,25 +35,26 @@ body {
     background: rgba(255,255,255,0.85);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid #ececf3;
-    padding: 20px 7%;
+    padding: 30px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .platform-tag {
-    font-size: 40px;
-    font-weight: 1000;
-    letter-spacing: 2px;
-    color: #7B4D86;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 4px;
+    color: #8D5A9B;
     text-transform: uppercase;
-    display: block;
-    margin-bottom: 6px;
+    margin-bottom: 10px;
 }
 
 .logo-area h1 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 56px;
+    font-weight: 900;
+    letter-spacing: -3px;
+    line-height: 0.95;
     color: #111827;
 }
 
@@ -63,10 +64,10 @@ body {
 }
 
     .navbar nav a {
-        text-decoration: none;
+        font-size: 20px;
+        font-weight: 600;
         color: #6b7280;
-        font-weight: 500;
-        transition: 0.2s ease;
+        text-decoration: none;
     }
 
         .navbar nav a:hover {
