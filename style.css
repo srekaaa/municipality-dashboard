@@ -42,19 +42,19 @@ body {
 }
 
 .platform-tag {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 800;
-    letter-spacing: 4px;
-    color: #8D5A9B;
+    letter-spacing: 5px;
+    color: #9D71A8;
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .logo-area h1 {
-    font-size: 30px;
-    font-weight: 900;
-    letter-spacing: -3px;
-    line-height: 0.95;
+    font-size: 58px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
     color: #111827;
 }
 
