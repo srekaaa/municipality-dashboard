@@ -285,6 +285,48 @@ body {
 }
 
 /* ================================= */
+/* RATIONEL CARD */
+/* ================================= */
+
+.rationel-card {
+    margin-top: 28px;
+    background: white;
+    border-radius: 28px;
+    padding: 42px;
+    border: 1px solid #ececf3;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+    display: flex;
+    align-items: flex-start;
+    gap: 28px;
+}
+
+.rationel-card-icon {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( 135deg, #DAB1DA, #9D71A8 );
+    color: white;
+    font-size: 28px;
+}
+
+.rationel-card-content h3 {
+    font-size: 30px;
+    margin-bottom: 14px;
+    color: #111827;
+}
+
+.rationel-card-content p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #4b5563;
+    max-width: 1200px;
+}
+
+/* ================================= */
 /* DASHBOARDS */
 /* ================================= */
 
