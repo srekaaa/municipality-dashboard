@@ -139,7 +139,7 @@ body {
 }
 
 .hero-card h2 {
-    font-size: clamp(90px, 10vw, 155px);
+    font-size: clamp(90px, 10vw, 100px);
     line-height: 0.82;
     letter-spacing: -7px;
     font-weight: 800;
