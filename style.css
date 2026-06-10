@@ -227,9 +227,16 @@ body {
     }
 
     .method-card i {
-        font-size: 22px;
-        color: #DAB1DA;
-        margin-bottom: 12px;
+        width: 64px;
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 18px;
+        background: linear-gradient( 135deg, #DAB1DA, #9D71A8 );
+        color: white;
+        font-size: 24px;
+        margin-bottom: 24px;
     }
 
     .method-card h3 {
