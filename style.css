@@ -421,7 +421,7 @@ body {
 /* REGRESSION */
 
 .dashboard-culture iframe {
-    width: 200%;
+    width: 50%;
     height: 900px;
     border: none;
     border-radius: 20px;
